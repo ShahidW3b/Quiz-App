@@ -1,0 +1,312 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* CSS Variables for themes */
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --btn-bg: #ffcc00;
+  --btn-text: #000;
+  --btn-hover-bg-light: #000000;
+  --btn-hover-color-light: #fff;
+  --btn-hover-bg-dark: #ffffff;
+  --btn-hover-color-dark: #000000;
+  --progress-bg: #ddd;
+  --progress-fill-bg: #ffcc00;
+}
+
+body.dark-mode {
+  --bg: #121212;
+  --text: #ffffff;
+  --btn-bg: #ffcc00;
+  --btn-text: #000;
+  --progress-bg: #444;
+  --progress-fill-bg: #ffcc00;
+}
+
+body.dark-mode .footer {
+  border-top: 1px solid #444;
+  box-shadow: 0 -1px 5px rgba(255, 255, 255, 0.05);
+}
+
+/* Logo Section */
+#logo-section {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 10px;
+  border-bottom: 2px solid #ccc;
+  position: relative;
+}
+
+#logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+#logo-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Mode toggle button */
+#mode-toggle {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--text);
+  user-select: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#mode-toggle:hover {
+  background-color: var(--btn-bg);
+}
+
+/* Category Section */
+#category-section {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.category-buttons button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: var(--btn-hover-bg-light);
+  color: var(--btn-hover-color-light);
+}
+
+/* Quiz Section */
+#quiz-section {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+}
+
+#progress {
+  width: 100%;
+  background-color: var(--progress-bg);
+  height: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+#progress-fill {
+  background-color: var(--progress-fill-bg);
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+h2#question {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.answer {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#time {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Bottom controls flex */
+#bottom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Buttons group */
+#bottom-controls > div {
+  display: flex;
+  gap: 12px;
+}
+
+
+button#back,
+button#next,
+button#submit {
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  transition: all 0.3s ease;
+  min-width: 80px;
+  user-select: none;
+}
+
+/* Disabled back button style */
+button#back:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Button hover styles for light and dark modes */
+body:not(.dark-mode) button#back:hover,
+body:not(.dark-mode) button#next:hover,
+body:not(.dark-mode) button#submit:hover {
+  background-color: var(--btn-hover-bg-light);
+  color: var(--btn-hover-color-light);
+}
+
+body.dark-mode button#back:hover,
+body.dark-mode button#next:hover,
+body.dark-mode button#submit:hover {
+  background-color: var(--btn-hover-bg-dark);
+  color: var(--btn-hover-color-dark);
+}
+
+#restart {
+  font-size: 1.5rem;
+  background-color:  var(--btn-bg);
+  color: black; 
+  transition: all 0.3s ease;
+  display: block; 
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#restart:hover {
+  background-color: black;
+  color: white ;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px 10px;
+  background-color: var(--btn-bg);
+  color: black;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+  
+}
+
+.footer:hover {
+  background-color: black;
+  color: white;
+}
+
+.brand {
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center; 
+  gap: 6px;
+  color:red;
+}
+
+.brand:hover {
+  color: var(--btn-bg);
+}
+
+
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 4px;
+  margin-left: 6px;
+
+}
+
+.whatsapp-icon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) saturate(100%) invert(57%) sepia(70%) saturate(405%) hue-rotate(85deg) brightness(94%) contrast(88%);
+   transition: transform 0.2s ease;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #bottom-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #bottom-controls > div {
+    justify-content: center;
+  }
+  .category-buttons {
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="title" content="Turning Ideas into Reality, One Line of Code at a Time.">
+  <meta name="description" content="A simple and interactive quiz app built with HTML, CSS, and JavaScript. Test your knowledge with multiple quizzes, a progress bar, and question shuffling.">
+
+  <link rel="shortcut icon" href="ion.jpg" type="image/svg+xml">
+
+  <title>Smart Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <!-- Logo Section -->
+  <header id="logo-section">
+  <!-- <img src="logo.jpg" alt="Quiz App Logo" id="logo-img"> -->
+    <h1 id="logo-title">Smart Quiz App</h1>
+    <button id="mode-toggle" aria-label="Toggle Light/Dark Mode">🌙</button>
+  </header>
+
+  <!-- Category Selection Section -->
+  <section id="category-section">
+    <h2>Select an Exam</h2>
+    <div class="category-buttons">
+      <button onclick="startQuiz('html')">HTML</button>
+      <button onclick="startQuiz('css')">CSS</button>
+      <button onclick="startQuiz('js')">JavaScript</button>
+      <button onclick="startQuiz('cpp')">C++</button>
+      <button onclick="startQuiz('python')">Python</button>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz-section" style="display: none;">
+    <div id="progress">
+      <div id="progress-fill"></div>
+    </div>
+    <h2 id="question">Question Text</h2>
+    <ul>
+      <li><input type="radio" name="answer" class="answer" id="a" /><label for="a" id="a_text"></label></li>
+      <li><input type="radio" name="answer" class="answer" id="b" /><label for="b" id="b_text"></label></li>
+      <li><input type="radio" name="answer" class="answer" id="c" /><label for="c" id="c_text"></label></li>
+      <li><input type="radio" name="answer" class="answer" id="d" /><label for="d" id="d_text"></label></li>
+    </ul>
+    <div id="bottom-controls">
+      <p id="time">Time left: 15s</p>
+      <div>
+        <button id="back" disabled>Back</button>
+        <button id="submit">Submit</button>
+        <button id="next">Next</button>
+      </div>
+    </div>
+  </section>
+
+    <footer class="footer">
+      Powered By <span class="brand"> ShahidWeb!
+
+        <a href="https://wa.me/+93708080639" target="_blank" class="whatsapp-link">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+
+      </span>
+    </footer>
+ 
+  
+    
+  <script src="script.js"></script>
+</body>
+</html>
