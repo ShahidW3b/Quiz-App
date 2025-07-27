@@ -13,7 +13,7 @@
 
 ### Demo Screeshots
 
-![Quiz web application Demo](./assets/images/port2.png "Desktop Demo")
+![Quiz web application Demo](ion.jpg)
 
 ### Prerequisites
 
