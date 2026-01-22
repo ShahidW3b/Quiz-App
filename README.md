@@ -14,20 +14,3 @@
 ### Demo Screeshots
 
 ![Quiz web application Demo](ion.jpg)
-
-### Prerequisites
-
-Before running this project locally, ensure you have: <br> 
-	•	Git <br> 
-	•	A web browser (Chrome, Firefox, Safari, etc.)
-
-<br>
-### Run Locally
-To clone and run the Quiz App on your system: <br>
-
-```bash
-git clone https://github.com/ShahidW3b/quiz-app.git
-cd quiz-app
-```
-Then, open the index.html file in your browser.
-
