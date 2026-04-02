@@ -10,7 +10,7 @@ It provides a simple and engaging platform for users to test knowledge while mai
 
 [➥ Live Demo](https://quiz-app-khaki-three.vercel.app/)
 
-![Preview](./ion.jpg)
+![Preview](./ion.png)
 
 ---
 
