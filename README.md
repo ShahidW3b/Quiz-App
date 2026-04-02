@@ -1,16 +1,44 @@
- <div align="center">
+# Quiz Web Application
 
- <h2 align="center">Quiz Web Application </h2>
+This project is a lightweight and responsive web application built using **HTML, CSS, and JavaScript**, designed to deliver an interactive quiz experience with real-time feedback and scoring.
 
-  A dynamic and fully responsive Quiz Web Application <br> built using HTML, CSS, and JavaScript. <br> 
-  Designed for interactive user experience, real-time scoring, and performance optimization across devices.
+It provides a simple and engaging platform for users to test knowledge while maintaining performance and usability across devices.
 
-  <a href="https://quiz-app-khaki-three.vercel.app/"><strong>➥ Live Demo</strong></a>
+---
 
-</div>
+## 📸 Preview
 
-<br />
+[➥ Live Demo](https://quiz-app-khaki-three.vercel.app/)
 
-### Demo Screeshots
+![Preview](./ion.jpg)
 
-![Quiz web application Demo](ion.jpg)
+---
+
+## 🎯 Core Functionality
+
+- Interactive quiz interface  
+- Real-time answer validation  
+- Instant score calculation  
+
+---
+
+## 🛠️ Technologies
+
+- HTML5  
+- CSS3  
+- JavaScript  
+
+---
+
+## 📱 Features
+
+- Fully responsive design  
+- Clean and user-friendly interface  
+- Fast and lightweight performance  
+
+
+---
+
+## 📄 License
+
+MIT License
